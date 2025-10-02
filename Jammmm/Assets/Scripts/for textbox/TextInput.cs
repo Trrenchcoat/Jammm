@@ -19,13 +19,28 @@ public class TextInput : MonoBehaviour
 
         userInput = userInput.ToLower();
         controller.LogStringWithReturn(userInput);
-        InputComplete();
-    }
 
-    void InputComplete()
-    {
-        controller.DisplayLoggedText();
-        inputField.ActivateInputField();
-        inputField.text = null;
+
+
+        char[] delimiterCharacters = {' '};
+        string[] separatedInputWords = userInput.Split(delimiterCharacters); //look for spaces and separate them into strings->words...-t
+
+        for (int i = 0; i < controller.inputActions.Length; i++)
+        {
+            InputAction inputAction = controller.inputActions[i];
+            if (inputAction.keyWord == separatedInputWords[0])
+            {
+                inputAction.RespondToInput(controller, separatedInputWords);
+            }
+            InputComplete();
+        }
+
+        void InputComplete()
+        {
+            controller.DisplayLoggedText();
+            inputField.ActivateInputField();
+            inputField.text = null;
+        }
+
     }
 }

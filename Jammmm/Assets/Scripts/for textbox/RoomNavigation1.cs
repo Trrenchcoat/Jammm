@@ -36,7 +36,7 @@ public class RoomNavigation1 : MonoBehaviour
         }
         else
         {
-            controller.LogStringWithReturn("You cannot go to the" + directionNoun);
+            controller.LogStringWithReturn("You cannot go to the " + directionNoun);
         }
     }
 
