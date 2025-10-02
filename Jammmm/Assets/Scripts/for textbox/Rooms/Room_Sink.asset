@@ -10,12 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
-  m_Name: Room_Bedroom
+  m_Name: Room_Sink
   m_EditorClassIdentifier: 
-  description: this is a narration of the bedroom,..... ooooo....
-  roomName: bedroom
-  exits:
-  - keyString: door
-    exitDescription: You need to get ready for the day. The doorway to the bathroom
-      stands before you.
-    valueRoom: {fileID: 11400000, guid: c21a33cdee4a8d44ba8baf8c3124ac54, type: 2}
+  description: would you look at that. let that sink in.
+  roomName: sink
+  exits: []

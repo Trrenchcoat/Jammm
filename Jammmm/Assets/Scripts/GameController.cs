@@ -7,8 +7,10 @@ public class GameController : MonoBehaviour
 {
 
     public Text displayText;
+    public InputAction[] inputActions;
 
     [HideInInspector] public RoomNavigation1 roomNavigation;
+    [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>(); //list of descriptions of exits for each room!-t
 
 
     List<string> actionLog = new List<string>();
@@ -41,17 +43,27 @@ public class GameController : MonoBehaviour
 
     public void DisplayRoomText()
     {
-        string combinedText = roomNavigation.currentRoom.description + "\n";
+        ClearCollectionsForNewRoom();
+        
+        UnpackRoom();
+
+        string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
+
+        string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions;
 
 
         //this is also for the experimental list section I thought I didn't have to do...:
         LogStringWithReturn(combinedText);
     }
 
+    void UnpackRoom()
+    {
+        roomNavigation.UnpackExitsInRoom();
+    }
 
-    //    // Update is called once per frame
-    //    void Update()
-    //    {
-
-    //    }
+    void ClearCollectionsForNewRoom()
+    {
+        interactionDescriptionsInRoom.Clear();
+        roomNavigation.ClearExits();
+    }
 }
