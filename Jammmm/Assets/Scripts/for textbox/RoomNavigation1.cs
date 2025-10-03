@@ -31,12 +31,12 @@ public class RoomNavigation1 : MonoBehaviour
         if (exitDictionary.ContainsKey(directionNoun))
         {
             currentRoom = exitDictionary[directionNoun];
-            controller.LogStringWithReturn("You go to the " + directionNoun);
+            controller.LogStringWithReturn("You go to the " + directionNoun + ".");
             controller.DisplayRoomText();
         }
         else
         {
-            controller.LogStringWithReturn("You cannot go to the " + directionNoun);
+            controller.LogStringWithReturn("You fail to go to the " + directionNoun + ".");
         }
     }
 

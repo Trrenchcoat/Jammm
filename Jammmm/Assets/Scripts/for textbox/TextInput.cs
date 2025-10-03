@@ -1,3 +1,4 @@
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class TextInput : MonoBehaviour
     GameController controller;
     public InputField inputField;
 
-
+    public string[] inputExceptions = { ">/", ">THE ORIGINAL" };
 
     void Awake()
     {
@@ -19,7 +20,7 @@ public class TextInput : MonoBehaviour
     void AcceptStringInput(string userInput)
     {
 
-        userInput = userInput.ToLower();
+        userInput = (">" + userInput.ToUpper());
         controller.LogStringWithReturn(userInput);
 
 
@@ -34,16 +35,27 @@ public class TextInput : MonoBehaviour
             {
                 inputAction.RespondToInput(controller, separatedInputWords);
             }
+
+
+            //TEXT THAT CAN BE INTERACTED WITH AT ANY POINT OF THE GAME...
+            else if (userInput == ">THE ORIGINAL")
+            {
+                controller.actionLog.Add("starwalker?" + "\n");
+            }
+            else if (userInput == ">/")
+            {
+                controller.actionLog.Add("'/' for help..." + "\n" + "'go to the _' to move..." + "\n" + "'/look' to look at the room again..." + "\n" + "and many more..." + "\n");
+            }
+            else if (userInput == ">/LOOK")
+            {
+                controller.DisplayRoomText();
+            }
             else
             {
-                if (userInput != "/")
-                {
-                    controller.actionLog.Add("...type '/' for help." + "\n");
-                }
-                
+                controller.actionLog.Add("...type '/' for help." + "\n");
             }
-            InputComplete();
-        } //OLD ORIGINAL LOOP!
+            
+} //OLD ORIGINAL LOOP!
 
         //for (int i = 0; i < userInput.Length; i++)
         //{
@@ -63,15 +75,6 @@ public class TextInput : MonoBehaviour
 
 
 
-        //TEXT THAT CAN BE INTERACTED WITH AT ANY POINT OF THE GAME...
-        if (userInput == "the original") 
-        {
-            controller.actionLog.Add("starwalker?" + "\n");
-        }
-        if (userInput == "/")
-        {
-            controller.actionLog.Add("'/' for help..." + "\n" + "'go to the _' to move..." + "\n" + "and many more..." + "\n");
-        }
         InputComplete();
     }
 

@@ -18,9 +18,9 @@ MonoBehaviour:
     you need to brush your teeth or else you will not sleep tonight.\r"
   roomName: bedroom
   exits:
-  - keyString: door
+  - keyString: DOOR
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: c21a33cdee4a8d44ba8baf8c3124ac54, type: 2}
-  - keyString: bathroom
+  - keyString: BATHROOM
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: c21a33cdee4a8d44ba8baf8c3124ac54, type: 2}
