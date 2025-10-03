@@ -5,7 +5,7 @@ public class RoomNavigation1 : MonoBehaviour
 {
     public Room currentRoom;
 
-    Dictionary<string, Room> exitDictionary = new Dictionary<string, Room> ();    
+    Dictionary<string, Room> exitDictionary = new Dictionary<string, Room> ();    //ties whatever word is said to the current room, only applies in that room.
 
     GameController controller;
 
@@ -48,3 +48,5 @@ public class RoomNavigation1 : MonoBehaviour
     }
 
 }
+
+//NOTHING TO HARDCODE HERE...-t

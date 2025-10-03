@@ -611,6 +611,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: aabd6ce3459d11a4aa990509218c3e33, type: 2}
   roomNavigation: {fileID: 0}
   interactionDescriptionsInRoom: []
+  actionLog: []
 --- !u!114 &1262336460
 MonoBehaviour:
   m_ObjectHideFlags: 0

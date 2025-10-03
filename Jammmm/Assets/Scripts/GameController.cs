@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>(); //list of descriptions of exits for each room!-t
 
 
-    List<string> actionLog = new List<string>();
+    public List<string> actionLog = new List<string>();
 
     public void LogStringWithReturn(string stringToAdd)
     {

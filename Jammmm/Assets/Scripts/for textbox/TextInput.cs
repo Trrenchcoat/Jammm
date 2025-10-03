@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,8 +23,8 @@ public class TextInput : MonoBehaviour
 
 
 
-        char[] delimiterCharacters = {' '};
-        string[] separatedInputWords = userInput.Split(delimiterCharacters); //look for spaces and separate them into strings->words...-t
+        char[] delimiterCharacters = { ' ' };
+        string[] separatedInputWords = userInput.Split(delimiterCharacters); //look for spaces and separate them into strings->words...-t //OLD
 
         for (int i = 0; i < controller.inputActions.Length; i++)
         {
@@ -33,7 +34,18 @@ public class TextInput : MonoBehaviour
                 inputAction.RespondToInput(controller, separatedInputWords);
             }
             InputComplete();
+        } //OLD
+
+
+        //TEXT THAT CAN BE INTERACTED WITH AT ANY POINT OF THE GAME...
+        if (userInput == "the original") 
+        {
+            controller.actionLog.Add("starwalker?" + "\n");
         }
+        InputComplete();
+    }
+
+
 
         void InputComplete()
         {
@@ -43,4 +55,3 @@ public class TextInput : MonoBehaviour
         }
 
     }
-}
