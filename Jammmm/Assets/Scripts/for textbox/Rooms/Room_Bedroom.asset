@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Room_Bedroom
   m_EditorClassIdentifier: 
-  description: this is a narration of the bedroom,..... ooooo....
+  description: "It\u2019s that special day again. \r\nYou can feel the caverns carved
+    through your teeth by the year-long \u201CI\u2019ll start again tomorrow.\u201D
+    Now too aware of the blankets of discomfort and dread stacked against your canines,
+    you need to brush your teeth or else you will not sleep tonight.\r"
   roomName: bedroom
   exits:
   - keyString: door
-    exitDescription: You need to get ready for the day. The doorway to the bathroom
-      stands before you.
+    exitDescription: 
     valueRoom: {fileID: 11400000, guid: c21a33cdee4a8d44ba8baf8c3124ac54, type: 2}
   - keyString: bathroom
     exitDescription: 
