@@ -15,9 +15,10 @@ MonoBehaviour:
   description: this is the description for the bathroom...scary :(
   roomName: bathroom
   exits:
-  - keyString: sink
+  - keyString: SINK
     exitDescription: It's sink time.
     valueRoom: {fileID: 11400000, guid: 756cdfdce2f5d9047ab352fe5df26616, type: 2}
-  - keyString: mirror
+  - keyString: MIRROR
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 756cdfdce2f5d9047ab352fe5df26616, type: 2}
+  background: {fileID: 8816486739985834537, guid: 198de4053e481c941bc2f4b89f47f22a, type: 3}

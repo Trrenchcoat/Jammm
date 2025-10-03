@@ -24,3 +24,4 @@ MonoBehaviour:
   - keyString: BATHROOM
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: c21a33cdee4a8d44ba8baf8c3124ac54, type: 2}
+  background: {fileID: -3521427111303423466, guid: d3a1e4e96229fa543ad193442a07feff, type: 3}

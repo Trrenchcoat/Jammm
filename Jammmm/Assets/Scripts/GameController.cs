@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour
     public Text displayText;
     public InputAction[] inputActions;
 
+    public SpriteRenderer displayBackground; //THIS PASSES, LIKE THE TEXT, THE ACTUAL GAME BACKGROUND SO THAT IT MAY BE CHANGED DYNAMICALLY... -t
+
     [HideInInspector] public RoomNavigation1 roomNavigation;
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>(); //list of descriptions of exits for each room!-t
 
@@ -26,12 +28,29 @@ public class GameController : MonoBehaviour
     }
 
 
+    public void DisplayRoomBackground()
+    {
+        int a = 0;
+        a++;
+        //displayBackground.sprite = roomNavigation.currentBackground;
+        displayBackground.sprite = roomNavigation.currentRoom.background;
+
+        //print("background number: " + a);
+        print(displayBackground.sprite); //THIS IS CURRENTLY NULL! room navigation has a current
+    }
+
+
+
+
+
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         roomNavigation = GetComponent<RoomNavigation1>();
+        
     }
 
 
@@ -39,6 +58,7 @@ public class GameController : MonoBehaviour
     {
         DisplayRoomText();
         DisplayLoggedText();
+        DisplayRoomBackground();
     }
 
     public void DisplayRoomText()

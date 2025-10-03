@@ -4,6 +4,8 @@ using UnityEngine;
 public class RoomNavigation1 : MonoBehaviour
 {
     public Room currentRoom;
+    public Sprite currentBackground;
+    
 
     Dictionary<string, Room> exitDictionary = new Dictionary<string, Room> ();    //ties whatever word is said to the current room, only applies in that room.
 
@@ -12,6 +14,7 @@ public class RoomNavigation1 : MonoBehaviour
     private void Awake()
     {
         controller = GetComponent<GameController>();
+        
     }
 
     public void UnpackExitsInRoom()
@@ -31,8 +34,11 @@ public class RoomNavigation1 : MonoBehaviour
         if (exitDictionary.ContainsKey(directionNoun))
         {
             currentRoom = exitDictionary[directionNoun];
+            //currentBackground = (exitDictionary[directionNoun]).background;
             controller.LogStringWithReturn("You go to the " + directionNoun + ".");
             controller.DisplayRoomText();
+            controller.DisplayRoomBackground();
+            currentBackground = currentRoom.background;
         }
         else
         {

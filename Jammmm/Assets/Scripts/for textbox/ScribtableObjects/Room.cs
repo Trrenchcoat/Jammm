@@ -1,3 +1,4 @@
+using Unity.Hierarchy;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Room", menuName = "Scriptable Objects/Room")]
@@ -7,4 +8,5 @@ public class Room : ScriptableObject
     public string description;
     public string roomName;
     public Exit[] exits;
+    public Sprite background;
 }

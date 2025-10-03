@@ -1,0 +1,42 @@
+BACKGROUND CHANGER 6783
+
+
+
+idea 1:
+>have one sprite object where the backgrounds will be shown in game (put and position in scene tree)(done)
+
+
+>assign a sprite in the room scriptable object (ex.room_bedroom goes the bedroom background sprite bg...)
+	declare the sprite in room.cs(done)
+>along with displaying new room text for each room, this ALSO calls DisplayRoomBackground(); which SETS the sprite of the main game background sprite to the current room/area background.
+
+display room background in gamecontroller.cs:
+	set display background to current background sprite
+
+
+@ i have referenced the display background in GameController.cs
+
+
+
+'
+
+
+
+
+Room.cs: Sprite background is defined, giving each room its prescribed SPRITE in engine inspector!
+
+RoomNavigation1: along with defining Room currentRoom, defines currentBackground (accesible in GameController inspector) -->IF SPRITE IS SPECIFIED, IT DOES SHOW IN GAME... NEED TO ENSURE IT SETS THIS VARIABLE WHEN IT CALLS DISPLAYROOMBACKGROUND! 
+	>link the room.cs Sprite background to currentBackground, same way tutorial did it? <<<<<<<<<<<<<<<<
+
+
+
+
+
+
+
+
+
+
+
+
+after this: figure how to call the fade animations...
