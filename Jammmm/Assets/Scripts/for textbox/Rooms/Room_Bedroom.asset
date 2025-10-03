@@ -19,3 +19,6 @@ MonoBehaviour:
     exitDescription: You need to get ready for the day. The doorway to the bathroom
       stands before you.
     valueRoom: {fileID: 11400000, guid: c21a33cdee4a8d44ba8baf8c3124ac54, type: 2}
+  - keyString: bathroom
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: c21a33cdee4a8d44ba8baf8c3124ac54, type: 2}

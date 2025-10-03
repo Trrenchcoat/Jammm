@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: would you look at that. let that sink in.
   roomName: sink
-  exits: []
+  exits:
+  - keyString: drain
+    exitDescription: ah.... drain
+    valueRoom: {fileID: 0}

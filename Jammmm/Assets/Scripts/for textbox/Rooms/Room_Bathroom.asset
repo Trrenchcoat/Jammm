@@ -18,3 +18,6 @@ MonoBehaviour:
   - keyString: sink
     exitDescription: It's sink time.
     valueRoom: {fileID: 11400000, guid: 756cdfdce2f5d9047ab352fe5df26616, type: 2}
+  - keyString: mirror
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 756cdfdce2f5d9047ab352fe5df26616, type: 2}
