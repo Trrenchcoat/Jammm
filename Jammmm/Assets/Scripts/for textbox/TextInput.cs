@@ -1,7 +1,10 @@
 using System.Linq;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TextInput : MonoBehaviour
@@ -9,6 +12,7 @@ public class TextInput : MonoBehaviour
     [SerializeField] private AudioClip errorSoundClip;
     [SerializeField] private AudioClip inputSoundClip;
     [SerializeField] private AudioClip AmbienceClip;
+    public bool isTitle = true;
     private AudioSource audioSource;
     //private AudioSource audioSourceAmbience;
     
@@ -17,11 +21,14 @@ public class TextInput : MonoBehaviour
 
     public string[] inputExceptions = { ">/", ">THE ORIGINAL" };
 
+    
+
     void Awake()
     {
         controller = GetComponent<GameController>();
         inputField.onEndEdit.AddListener(AcceptStringInput);
-    }
+        
+}
 
 
     void Start() {
@@ -31,6 +38,8 @@ public class TextInput : MonoBehaviour
         //audioSourceAmbience = GetComponent<AudioSource>();
         //audioSource.clip = AmbienceClip;
         audioSource.PlayOneShot(AmbienceClip);
+
+        
     }
 
 
@@ -75,6 +84,16 @@ public class TextInput : MonoBehaviour
                 controller.DisplayRoomText();
                 audioSource.clip = inputSoundClip;
                 audioSource.Play();
+            }
+            else if (userInput == ">QUIT")
+            {
+                Application.Quit();
+                print("has done quit");
+            }
+            else if (userInput == ">START" && isTitle == true)
+            {
+                isTitle = false;
+                SceneManager.LoadScene("Rm_Bedroom"); 
             }
             else
             {
