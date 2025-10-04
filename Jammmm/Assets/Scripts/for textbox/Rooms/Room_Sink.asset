@@ -16,6 +16,6 @@ MonoBehaviour:
   roomName: sink
   exits:
   - keyString: DRAIN
-    exitDescription: let that sink in
+    exitDescription: let that sink in....
     valueRoom: {fileID: 11400000, guid: f4118f8865805cd4e810d4600eef2641, type: 2}
-  background: {fileID: 0}
+  background: {fileID: 8816486739985834537, guid: 198de4053e481c941bc2f4b89f47f22a, type: 3}

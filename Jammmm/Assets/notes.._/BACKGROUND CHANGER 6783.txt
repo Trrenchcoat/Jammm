@@ -18,11 +18,6 @@ display room background in gamecontroller.cs:
 
 
 
-'
-
-
-
-
 Room.cs: Sprite background is defined, giving each room its prescribed SPRITE in engine inspector!
 
 RoomNavigation1: along with defining Room currentRoom, defines currentBackground (accesible in GameController inspector) -->IF SPRITE IS SPECIFIED, IT DOES SHOW IN GAME... NEED TO ENSURE IT SETS THIS VARIABLE WHEN IT CALLS DISPLAYROOMBACKGROUND! 
@@ -34,7 +29,7 @@ RoomNavigation1: along with defining Room currentRoom, defines currentBackground
 
 
 
-
+done
 
 
 

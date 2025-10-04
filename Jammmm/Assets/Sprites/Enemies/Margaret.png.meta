@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d3a1e4e96229fa543ad193442a07feff
+guid: f8ea2e58d5749aa47bb28b32f7279ca4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3521427111303423466
-    second: bathroom_0
+      213: 8696178393230861633
+    second: Margaret_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bathroom_0
+      name: Margaret_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 900
-        height: 500
+        width: 129
+        height: 233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61a545813b0612fc0800000000000000
-      internalID: -3521427111303423466
+      spriteID: 145e3ff9c280fa870800000000000000
+      internalID: 8696178393230861633
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bathroom_0: -3521427111303423466
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
