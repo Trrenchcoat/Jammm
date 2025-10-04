@@ -6,6 +6,12 @@ using UnityEngine.UI;
 
 public class TextInput : MonoBehaviour
 {
+    [SerializeField] private AudioClip errorSoundClip;
+    [SerializeField] private AudioClip inputSoundClip;
+    [SerializeField] private AudioClip AmbienceClip;
+    private AudioSource audioSource;
+    //private AudioSource audioSourceAmbience;
+    
     GameController controller;
     public InputField inputField;
 
@@ -21,6 +27,10 @@ public class TextInput : MonoBehaviour
     void Start() {
         inputField.ActivateInputField();
         Cursor.visible = false;
+        audioSource = GetComponent<AudioSource>();
+        //audioSourceAmbience = GetComponent<AudioSource>();
+        //audioSource.clip = AmbienceClip;
+        audioSource.PlayOneShot(AmbienceClip);
     }
 
 
@@ -41,6 +51,9 @@ public class TextInput : MonoBehaviour
             if (inputAction.keyWord == separatedInputWords[0])
             {
                 inputAction.RespondToInput(controller, separatedInputWords);
+                audioSource.clip = inputSoundClip;
+                audioSource.Play();
+                audioSource.pitch = UnityEngine.Random.Range(0.5f, 1.0f);
             }
 
 
@@ -48,18 +61,27 @@ public class TextInput : MonoBehaviour
             else if (userInput == ">THE ORIGINAL")
             {
                 controller.actionLog.Add("starwalker?" + "\n");
+                audioSource.clip = inputSoundClip;
+                audioSource.Play();
             }
             else if (userInput == ">/")
             {
                 controller.actionLog.Add("'/' for help..." + "\n" + "'go to the _' to move..." + "\n" + "'/look' to look at the room again..." + "\n" + "and many more..." + "\n");
+                audioSource.clip = inputSoundClip;
+                audioSource.Play();
             }
             else if (userInput == ">/LOOK")
             {
                 controller.DisplayRoomText();
+                audioSource.clip = inputSoundClip;
+                audioSource.Play();
             }
             else
             {
                 controller.actionLog.Add("...type '/' for help." + "\n");
+                //PLAY ERROR SFX
+                audioSource.clip = errorSoundClip;
+                audioSource.Play();
             }
             
 } //OLD ORIGINAL LOOP!
