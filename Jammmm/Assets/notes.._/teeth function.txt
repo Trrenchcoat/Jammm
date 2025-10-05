@@ -14,3 +14,9 @@ public void brushTeeth() {
 }
 
 it should be called: when the player has gone to the toothbrush (script?)(done)
+
+
+
+
+for future reference of a better textbox keyword system:
+a duplicate of the current system, however instead of taking one keyword checked at index 3 after saying "go", it just checks for an entire string statement in equality to the player input, then returning whatever value room corresponding just like the original system.

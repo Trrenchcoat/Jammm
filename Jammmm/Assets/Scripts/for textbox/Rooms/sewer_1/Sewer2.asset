@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
-  m_Name: Area_Faucet
+  m_Name: Sewer2
   m_EditorClassIdentifier: 
-  description: Brush your teeth boy.
-  roomName: brush teeth
+  description: the second area
+  roomName: sewers
   exits:
-  - keyString: MIRROR
-    exitDescription: 'be done with it '
-    valueRoom: {fileID: 11400000, guid: fe62dd0c46390e4439450b9fe13ae079, type: 2}
-  background: {fileID: -8558289449854139997, guid: 568d96e50c7af1b40bb920e2d6c877fa, type: 3}
+  - keyString: 3
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 3629d6b22b2816b489243e3b329204a9, type: 2}
+  background: {fileID: 8257562389957712135, guid: bf1e01d2d806c784ea3584c296eb1371, type: 3}

@@ -10,12 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
-  m_Name: Area_Drain
+  m_Name: Room_END
   m_EditorClassIdentifier: 
-  description: the drain is saying something.
-  roomName: bathroom
+  description: 'Death is an opportunity - for Jamsepticeye 2025
+
+    thank you for
+    playinhg'
+  roomName: end
   exits:
-  - keyString: 
-    exitDescription: Will you accept the opportunity? Will you go down the drain?
-    valueRoom: {fileID: 0}
-  background: {fileID: 3070545878321003565, guid: bc7f620d501d9f94ab52488a382d3433, type: 3}
+  - keyString: CREDITS
+    exitDescription: (type 'go to the credits' for credits)
+    valueRoom: {fileID: 11400000, guid: 70391f0969b788948831b5d9fa19bce9, type: 2}
+  background: {fileID: 0}

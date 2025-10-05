@@ -1,0 +1,10 @@
+other planning
+
+
+
+
+
+
+>hardcode if player says "look at the drain" or "go to the drain" while in area_sink, brings to room area_drain in which there is dialogue etc..
+
+>hardcode if current room is Area_Drain and player says "Go down the drain", it switches the scene to sewer scene 

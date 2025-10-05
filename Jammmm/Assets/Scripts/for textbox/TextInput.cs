@@ -101,6 +101,7 @@ public class TextInput : MonoBehaviour
                 }
                 
             }
+            //else if ((userInput == ">GO TO THE DRAIN") && (RoomNavigation1.currentRoom == "Area_Sink" || Navigation.currentRoom == "Area")
             else
             {
                 controller.actionLog.Add("...type '/' for help." + "\n");

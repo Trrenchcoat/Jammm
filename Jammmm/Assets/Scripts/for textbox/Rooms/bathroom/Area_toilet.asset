@@ -10,23 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
-  m_Name: Room_Bathroom
+  m_Name: Area_toilet
   m_EditorClassIdentifier: 
-  description: "The moment you step near your bathroom, you are assaulted by an odd
-    smell. At first, you only smell strong mixes of chloride and vinegar. After a
-    few shaky breaths, the undertone scent of maggots becomes recognizable, alongside
-    the hint of orange room spray. It\u2019s clearly not doing its job.\r\n"
+  description: You don't need to use the toilet right now.
   roomName: bathroom
   exits:
   - keyString: SINK
     exitDescription: The sink is in front of you.
     valueRoom: {fileID: 11400000, guid: 756cdfdce2f5d9047ab352fe5df26616, type: 2}
-  - keyString: MIRROR
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 756cdfdce2f5d9047ab352fe5df26616, type: 2}
-  - keyString: TOILET
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 10564c6730452fe45b98553bd187d808, type: 2}
   - keyString: FRONT
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 756cdfdce2f5d9047ab352fe5df26616, type: 2}

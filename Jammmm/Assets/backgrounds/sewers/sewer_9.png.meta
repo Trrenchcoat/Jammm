@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f8ea2e58d5749aa47bb28b32f7279ca4
+guid: b998f828e5fbe59438de71f8cc867b89
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8696178393230861633
-    second: Margaret_0
+      213: 6968818018772349889
+    second: sewer_9_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Margaret_0
+      name: sewer_9_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 129
-        height: 233
+        width: 900
+        height: 339
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 145e3ff9c280fa870800000000000000
-      internalID: 8696178393230861633
+      spriteID: 1c37441d01736b060800000000000000
+      internalID: 6968818018772349889
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Margaret_0: 8696178393230861633
+      sewer_9_0: 6968818018772349889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
-  m_Name: Area_Drain
+  m_Name: Sewer5
   m_EditorClassIdentifier: 
-  description: the drain is saying something.
-  roomName: bathroom
+  description: the fifth area
+  roomName: sewers
   exits:
-  - keyString: 
-    exitDescription: Will you accept the opportunity? Will you go down the drain?
-    valueRoom: {fileID: 0}
-  background: {fileID: 3070545878321003565, guid: bc7f620d501d9f94ab52488a382d3433, type: 3}
+  - keyString: 6
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: efe8fe4b4bfd1c14885ad0dde6fbb518, type: 2}
+  background: {fileID: -3567412442040069134, guid: 351257653d0a8dc40818645472c122cc, type: 3}

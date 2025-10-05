@@ -1,0 +1,9 @@
+battle system
+
+
+
+
+
+have defeated enemy: turn sprite black like a sillouhet and small animation
++ background albedo to red
+>then transport back to other scene...

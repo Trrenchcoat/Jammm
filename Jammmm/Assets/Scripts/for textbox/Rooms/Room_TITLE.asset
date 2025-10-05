@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Room_TITLE
   m_EditorClassIdentifier: 
   description: "wleocme to the game. \n"
-  roomName: title
+  roomName: end
   exits:
   - keyString: START
     exitDescription: remember to smile!
