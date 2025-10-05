@@ -133,7 +133,7 @@ public class TextInput : MonoBehaviour
             }
 
 
-            else if (navigation.currentRoom.roomName == "sewer3")
+            else if ((navigation.currentRoom.roomName == "sewer3") && (GlobalVariables.canEncounter1 = true))
             {
                 //before this happens, there would be narration
 

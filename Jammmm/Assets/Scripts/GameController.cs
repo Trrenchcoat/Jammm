@@ -70,15 +70,17 @@ public class GameController : MonoBehaviour
         DisplayRoomBackground();
 
 
-        if (GlobalVariables.encounter1Bool == true) {
+        if ((GlobalVariables.encounter1Bool == true) && (GlobalVariables.encounter2Bool == false) && (GlobalVariables.encounter3Bool == false) && (GlobalVariables.canEncounter1 == false))
+        {
 
             roomNavigation.currentRoom = afterEncounter1WORKING;
-            print(roomNavigation.currentRoom.name);
+            //print(roomNavigation.currentRoom.name);
+            print(GlobalVariables.canEncounter1);
             DisplayRoomText();
             DisplayLoggedText();
             DisplayRoomBackground();
         }
-        else if (GlobalVariables.encounter2Bool == true)
+        if ((GlobalVariables.encounter1Bool == true) && (GlobalVariables.encounter2Bool == true) && (GlobalVariables.encounter3Bool == false))
         {
 
             roomNavigation.currentRoom = afterEncounter2WORKING;
@@ -87,7 +89,7 @@ public class GameController : MonoBehaviour
             DisplayLoggedText();
             DisplayRoomBackground();
         }
-        else if (GlobalVariables.encounter3Bool == true)
+        if ((GlobalVariables.encounter1Bool == true) && (GlobalVariables.encounter2Bool == true) && (GlobalVariables.encounter3Bool == true))
         {
 
             roomNavigation.currentRoom = afterEncounter3WORKING;
@@ -96,10 +98,7 @@ public class GameController : MonoBehaviour
             DisplayLoggedText();
             DisplayRoomBackground();
         }
-        else
-        {
-            print("bool is false");
-        }
+        
     }
 
     public void DisplayRoomText()
@@ -188,9 +187,18 @@ public class GameController : MonoBehaviour
 
     IEnumerator EnemyEncounter1(float delayTime)
     {
-        yield return new WaitForSeconds(delayTime);
+        if (GlobalVariables.canEncounter1 == true)
+        {
+            yield return new WaitForSeconds(delayTime);
 
-        SceneManager.LoadScene("Encounter_1");
+            SceneManager.LoadScene("Encounter_1");
+
+        }
+        else
+        {
+            print("cannot load 1");
+        }
+
 
     }
 

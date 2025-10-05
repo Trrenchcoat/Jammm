@@ -8,4 +8,7 @@ public class GlobalVariables : MonoBehaviour
     public static bool encounter2Bool = false;
     public static bool encounter3Bool = false;
 
+    public static bool canEncounter1 = true;
+    
+
 }

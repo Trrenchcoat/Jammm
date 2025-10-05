@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2028640505060984139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6045772605497146006}
+  - component: {fileID: 4187729520613629082}
+  - component: {fileID: 6891776342792169017}
+  - component: {fileID: 1960958858100901121}
+  - component: {fileID: 7461682357933259508}
+  m_Layer: 0
+  m_Name: BattleSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6045772605497146006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028640505060984139}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30987886, y: -0.62779963, z: 0.439682}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4187729520613629082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028640505060984139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb7014fb3ae7234993dc436e7982f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navigation: {fileID: 6891776342792169017}
+  controller: {fileID: 1960958858100901121}
+  global: {fileID: 7461682357933259508}
+  nextScene: {fileID: 11400000, guid: 3629d6b22b2816b489243e3b329204a9, type: 2}
+--- !u!114 &6891776342792169017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028640505060984139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d15858fa172849145b310c44a698359b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRoom: {fileID: 11400000, guid: 3629d6b22b2816b489243e3b329204a9, type: 2}
+  currentBackground: {fileID: 0}
+  brushTeethCursor: {fileID: 0}
+  normalCursor: {fileID: 0}
+  hotSpot: {x: 0, y: 0}
+  BrushcursorMode: 0
+  normalCursorMode: 0
+  afterEncounter1Room: {fileID: 11400000, guid: 3629d6b22b2816b489243e3b329204a9, type: 2}
+--- !u!114 &1960958858100901121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028640505060984139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70634652261f92d49adc1c6b5fddbe91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  afterEncounter1WORKING: {fileID: 0}
+  afterEncounter2WORKING: {fileID: 0}
+  afterEncounter3WORKING: {fileID: 0}
+  displayText: {fileID: 0}
+  inputActions: []
+  displayBackground: {fileID: 0}
+  roomNavigation: {fileID: 0}
+  interactionDescriptionsInRoom: []
+  actionLog: []
+--- !u!114 &7461682357933259508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028640505060984139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1d5ada5ae5eea47aafb393a7c22fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

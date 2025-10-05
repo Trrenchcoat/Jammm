@@ -43,12 +43,35 @@ public class BattleSystem : MonoBehaviour
         //print(navigation.currentRoom);
         //navigation.setCurrentRoom(nextScene);
 
-        bool dataToKeep = true;
-        GlobalVariables.encounter1Bool = dataToKeep;
         
+        //if encounter 1, 2 and 3 is false, encounter 1 = true
+        //if encounter 1 is true, and 2 and 3 are false, encounter 2 = true
+        
+        if ((GlobalVariables.encounter1Bool == false) && (GlobalVariables.encounter2Bool == false) && (GlobalVariables.encounter3Bool == false))
+        {
+            GlobalVariables.encounter1Bool = true;
+            GlobalVariables.canEncounter1 = false;
+            print("can encounter 1 is false");
+            SceneManager.LoadScene("Area_Sewers");
+        }
+        else if ((GlobalVariables.encounter1Bool == true) && (GlobalVariables.encounter2Bool == false) && (GlobalVariables.encounter3Bool == false))
+        {
+            GlobalVariables.encounter2Bool = true;
+            SceneManager.LoadScene("Area_Sewers");
+        }
+        else if ((GlobalVariables.encounter1Bool == true) && (GlobalVariables.encounter2Bool == true) && (GlobalVariables.encounter3Bool == false))
+        {
+            GlobalVariables.encounter3Bool = true;
+            SceneManager.LoadScene("Area_Sewers");
+        }
 
-        SceneManager.LoadScene("Area_Sewers");
-        
+
+
+
+
+
+
+
 
 
         //need to figure out a way to load into the last room, or keep the area sewers loaded at all times.

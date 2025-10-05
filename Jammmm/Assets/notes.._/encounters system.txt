@@ -1,0 +1,16 @@
+third area: encounters encounter 1
+
+when endcombat():
+	checks which encounters have happened.
+	if all encounters are false, this means it is the first encounter, setting encounter bool to true and can encounter1 to false, cannot encounter 1 again
+	loads back into the sewers scene
+
+	then on start, the sewers scene is checking which room to load back into (works)
+
+
+
+
+problem: it loads the second encounter well, but then it loads the first encounter scene right after? the same happens for encounter 3->encounter 1 again.
+
+
+even loading encounter 2 or 3 on their own will automatically load encounter 1, meaning the problem is in the gamecontroller.cs start function.
