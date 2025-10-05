@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Cursor = UnityEngine.Cursor;
@@ -17,8 +18,10 @@ public class RoomNavigation1 : MonoBehaviour
     public CursorMode BrushcursorMode;
     public CursorMode normalCursorMode;
 
-    //public bool isTrue = true;
-    
+    [SerializeReference] public Room afterEncounter1Room;
+
+
+
 
     Dictionary<string, Room> exitDictionary = new Dictionary<string, Room> ();    //ties whatever word is said to the current room, only applies in that room.
 
@@ -30,7 +33,8 @@ public class RoomNavigation1 : MonoBehaviour
         controller = GetComponent<GameController>();
         textinput = GetComponent<TextInput>();
         
-        
+
+
     }
 
     public void UnpackExitsInRoom()
@@ -87,7 +91,18 @@ public class RoomNavigation1 : MonoBehaviour
 
 
 
+    public void openScene(string roomName, string sceneName)
+    {
+        
+        currentRoom.roomName = roomName;
+        SceneManager.LoadScene(sceneName);
 
+    }
+
+    public void setCurrentRoom(Room nextCurrRoom)
+    {
+        currentRoom = nextCurrRoom;
+    }
 
 
 

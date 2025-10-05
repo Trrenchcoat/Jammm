@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
 
+    //public bool encounter1Completed = GlobalVariables.encounter1Bool;
+
+    [SerializeField] private Room pleasenextscene;
+
     public Text displayText;
     public InputAction[] inputActions;
 
@@ -50,7 +54,7 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         roomNavigation = GetComponent<RoomNavigation1>();
-        
+        //DontDestroyOnLoad(this.gameObject);
     }
 
 
@@ -59,6 +63,20 @@ public class GameController : MonoBehaviour
         DisplayRoomText();
         DisplayLoggedText();
         DisplayRoomBackground();
+
+
+        if (GlobalVariables.encounter1Bool == true) {
+
+            roomNavigation.currentRoom = pleasenextscene;
+            print(roomNavigation.currentRoom.name);
+            DisplayRoomText();
+            DisplayLoggedText();
+            DisplayRoomBackground();
+        }
+        else
+        {
+            print("bool is false");
+        }
     }
 
     public void DisplayRoomText()

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
-  m_Name: Sewer3
+  m_Name: Sewer11
   m_EditorClassIdentifier: 
-  description: the third area
-  roomName: sewer3
+  description: the eleventh  area
+  roomName: sewer11
   exits:
-  - keyString: 4
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 4aa71855daa01664597159da497b95c0, type: 2}
-  background: {fileID: -3602011145999552112, guid: a3373ca2846083e43b43e0b484881a3d, type: 3}
+  - keyString: aaaaaaaaaa
+    exitDescription: there is nothing currently proceeding the eleventh area
+    valueRoom: {fileID: 0}
+  background: {fileID: 5821158722369262566, guid: 314cf6dfc654d93458bf68988750a5e7, type: 3}
