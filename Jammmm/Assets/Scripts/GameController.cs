@@ -30,13 +30,13 @@ public class GameController : MonoBehaviour
 
     public void DisplayRoomBackground()
     {
-        int a = 0;
-        a++;
-        //displayBackground.sprite = roomNavigation.currentBackground;
-        displayBackground.sprite = roomNavigation.currentRoom.background;
+        //int a = 0;
+        //a++;
+        
+        displayBackground.sprite = roomNavigation.currentRoom.background; //THIS CHANGES BACKGROUND SPRITE WHEN NEW AREA IS ENTERED DO NOT FUCK WITH PLSEASE -t
 
         //print("background number: " + a);
-        print(displayBackground.sprite); //THIS IS CURRENTLY NULL! room navigation has a current
+        //print(displayBackground.sprite);
     }
 
 
@@ -86,4 +86,25 @@ public class GameController : MonoBehaviour
         interactionDescriptionsInRoom.Clear();
         roomNavigation.ClearExits();
     }
+
+
+
+
+
+
+
+
+
+
+
+    public void switchRoom(Room RoomToChangeTo)
+    {
+        roomNavigation.currentRoom = RoomToChangeTo;
+        DisplayRoomText();
+        DisplayRoomBackground();
+    }
+
+
+
+
 }

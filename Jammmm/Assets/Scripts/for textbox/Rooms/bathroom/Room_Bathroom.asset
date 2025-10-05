@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
-  m_Name: Room_Bathroom
+  m_Name: draintalk
   m_EditorClassIdentifier: 
   description: this is the description for the bathroom...scary :(
   roomName: bathroom

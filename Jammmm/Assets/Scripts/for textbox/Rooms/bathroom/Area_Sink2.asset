@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
-  m_Name: Room_Sink
+  m_Name: Area_Sink2
   m_EditorClassIdentifier: 
-  description: this is a sink
-  roomName: sink
+  description: looking back at the sink.
+  roomName: draintalk
   exits:
   - keyString: DRAIN
-    exitDescription: let that sink in....
+    exitDescription: the drain is speaking
     valueRoom: {fileID: 11400000, guid: f4118f8865805cd4e810d4600eef2641, type: 2}
-  background: {fileID: 8816486739985834537, guid: 198de4053e481c941bc2f4b89f47f22a, type: 3}
+  background: {fileID: 3070545878321003565, guid: bc7f620d501d9f94ab52488a382d3433, type: 3}

@@ -1,0 +1,16 @@
+public void brushTeeth() {
+//a function that:
+>makes cursor visible(done)
+>sets cursor icon to the toothbrush sprite(done)
+>slows the speed of the cursor, maybe an effect
+>starts a timer of 10 seconds,(done)
+>teeth brushing noise while cursor moves in specific area of screen (supposed mouth)?????????????
+>change inputfield placeholder to "You cannot think while doing this"(done)
+>deactivate inputfield(done)
+>at end of timer:
+	>hide cursor(done)
+	>change current room to looking back at the sink (drain speaking)?????
+	>reactivate inputfield(done)
+}
+
+it should be called: when the player has gone to the toothbrush (script?)(done)

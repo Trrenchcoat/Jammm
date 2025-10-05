@@ -1119,6 +1119,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentRoom: {fileID: 11400000, guid: 86607a25bfdf25c44b7e49fb11d8ce51, type: 2}
   currentBackground: {fileID: 3356837773014537050, guid: 15e4a3cdc56a09f4c8dd09abd1a96938, type: 3}
+  brushTeethCursor: {fileID: 2800000, guid: 0c3e35a5811f2cc41862c91faf3bae5c, type: 3}
+  normalCursor: {fileID: 0}
+  hotSpot: {x: 0, y: 0}
+  BrushcursorMode: 1
+  normalCursorMode: 0
 --- !u!114 &504319133224393420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,6 +1139,8 @@ MonoBehaviour:
   errorSoundClip: {fileID: 8300000, guid: 10a38cffab7bae34c8fb537596240a4b, type: 3}
   inputSoundClip: {fileID: 8300000, guid: 41dc63fe666cd1849a131502cd849173, type: 3}
   AmbienceClip: {fileID: 8300000, guid: 1b16120b80b7c404db190019c894c6e2, type: 3}
+  inputPlaceholdertext: {fileID: 6679897590840531501}
+  isTitle: 1
   inputField: {fileID: 4603212996392984278}
   inputExceptions:
   - '>/'

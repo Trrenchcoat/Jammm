@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
+  m_Name: Area_Sink
+  m_EditorClassIdentifier: 
+  description: this is a sink
+  roomName: bathroom
+  exits:
+  - keyString: DRAIN
+    exitDescription: let that sink in....
+    valueRoom: {fileID: 11400000, guid: f4118f8865805cd4e810d4600eef2641, type: 2}
+  - keyString: FAUCET
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: eec9a2769f8b19a479125fa194c797f1, type: 2}
+  - keyString: TAP
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: eec9a2769f8b19a479125fa194c797f1, type: 2}
+  - keyString: TOOTHBRUSH
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: eec9a2769f8b19a479125fa194c797f1, type: 2}
+  - keyString: TEETH
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: eec9a2769f8b19a479125fa194c797f1, type: 2}
+  background: {fileID: -8558289449854139997, guid: 568d96e50c7af1b40bb920e2d6c877fa, type: 3}

@@ -12,6 +12,7 @@ public class TextInput : MonoBehaviour
     [SerializeField] private AudioClip errorSoundClip;
     [SerializeField] private AudioClip inputSoundClip;
     [SerializeField] private AudioClip AmbienceClip;
+    [SerializeField] public Text inputPlaceholdertext;
     public bool isTitle = true;
     private AudioSource audioSource;
     //private AudioSource audioSourceAmbience;
@@ -90,10 +91,15 @@ public class TextInput : MonoBehaviour
                 Application.Quit();
                 print("has done quit");
             }
-            else if (userInput == ">START" && isTitle == true)
+            else if (userInput == ">START")
             {
-                isTitle = false;
-                SceneManager.LoadScene("Rm_Bedroom"); 
+                
+                if (isTitle == true)
+                {
+                    SceneManager.LoadScene("Rm_Bedroom");
+                    isTitle = false;
+                }
+                
             }
             else
             {
