@@ -26,7 +26,9 @@ public class TextInput : MonoBehaviour
 
     public string[] drainList = { ">LOOK INTO THE DRAIN", ">LOOK IN THE DRAIN", ">THE DRAIN", ">IN THE DRAIN", ">IN DRAIN", ">DRAIN", ">ACCEPT", ">OPPORTUNITY", ">DEATH", ">ACCEPT THE OPPORTUNITY" };
     //^^^^ WORKING WAY TO TAKE MANY INPUTS FOR ONE OR MULTIPLE OUTCOMES, OR EVEN EXPERIMENT WITH RANDOM OUTCOMES WITH ANOTHER LIST OF RESPONSES... -t
-    public string[] SewerArea1List = { ">CONTINUE", ">RIGHT", ">LEFT", ">MOVE FORWARD" };
+    public string[] Encounter1List = { ">ENEMY 1"};
+    public string[] Encounter2List = { ">ENEMY 2" };
+    public string[] Encounter3List = { ">ENEMY 3" };
 
     public string[] inputExceptions = { ">/", ">THE ORIGINAL" };
 
@@ -131,7 +133,7 @@ public class TextInput : MonoBehaviour
             }
 
 
-            else if (SewerArea1List.Contains(userInput) && (navigation.currentRoom.roomName == "sewer2"))
+            else if (navigation.currentRoom.roomName == "sewer3")
             {
                 //before this happens, there would be narration
 
@@ -143,6 +145,30 @@ public class TextInput : MonoBehaviour
             }
 
 
+
+            else if (navigation.currentRoom.roomName == "sewer6")
+            {
+                //before this happens, there would be narration i imagine
+
+                //timer here to delay
+                StartCoroutine(EnemyEncounter2(2.0f));
+                controller.LogStringWithReturn("You have encountered an entity!");
+
+
+            }
+
+
+
+            else if (navigation.currentRoom.roomName == "sewer9")
+            {
+                //before this happens, there would be narration i imagine
+
+                //timer here to delay
+                StartCoroutine(EnemyEncounter3(2.0f));
+                controller.LogStringWithReturn("You have encountered an entity!");
+
+
+            }
 
 
 
@@ -219,6 +245,24 @@ public class TextInput : MonoBehaviour
 
     }
 
+
+
+    IEnumerator EnemyEncounter2(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+
+        SceneManager.LoadScene("Encounter_2");
+
+    }
+
+
+    IEnumerator EnemyEncounter3(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+
+        SceneManager.LoadScene("Encounter_3");
+
+    }
 }
 
 

@@ -18,4 +18,4 @@ MonoBehaviour:
   - keyString: 4
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 4aa71855daa01664597159da497b95c0, type: 2}
-  background: {fileID: -3602011145999552112, guid: a3373ca2846083e43b43e0b484881a3d, type: 3}
+  background: {fileID: 8539718795578399560, guid: 6499cf7a89c0e2e4b8fb2839a6e6b215, type: 3}

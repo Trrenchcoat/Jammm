@@ -1259,11 +1259,12 @@ MonoBehaviour:
   - '>OPPORTUNITY'
   - '>DEATH'
   - '>ACCEPT THE OPPORTUNITY'
-  SewerArea1List:
-  - '>CONTINUE'
-  - '>RIGHT'
-  - '>LEFT'
-  - '>MOVE FORWARD'
+  Encounter1List:
+  - '>ENEMY 1'
+  Encounter2List:
+  - '>ENEMY 2'
+  Encounter3List:
+  - '>ENEMY 3'
   inputExceptions:
   - '>/'
   - '>THE ORIGINAL'
@@ -1561,7 +1562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -120.000015}
+  m_AnchoredPosition: {x: 0, y: -120}
   m_SizeDelta: {x: 20, y: -240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8185175255989033612
@@ -1631,7 +1632,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70634652261f92d49adc1c6b5fddbe91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pleasenextscene: {fileID: 11400000, guid: 3629d6b22b2816b489243e3b329204a9, type: 2}
+  afterEncounter1WORKING: {fileID: 11400000, guid: 4aa71855daa01664597159da497b95c0, type: 2}
+  afterEncounter2WORKING: {fileID: 11400000, guid: f7a41d26959dfe344b67a65c01dee02d, type: 2}
+  afterEncounter3WORKING: {fileID: 11400000, guid: 4839eb14fef5a5d42b0adb877b306bcb, type: 2}
   displayText: {fileID: 3471659214161413868}
   inputActions:
   - {fileID: 11400000, guid: aabd6ce3459d11a4aa990509218c3e33, type: 2}

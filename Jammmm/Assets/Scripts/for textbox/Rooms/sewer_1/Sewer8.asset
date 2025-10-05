@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Sewer8
   m_EditorClassIdentifier: 
   description: the eighth area
-  roomName: sewers
+  roomName: sewer8
   exits:
   - keyString: 9
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 6c0f7b75dc6f7a44bb08120e33ac1e1f, type: 2}
-  background: {fileID: 3638052136721763057, guid: 9ccf6121310b71846b8a133471ecf881, type: 3}
+  background: {fileID: -958099882079520630, guid: 748065d2d18a26b4592e62b19ec9a5dd, type: 3}

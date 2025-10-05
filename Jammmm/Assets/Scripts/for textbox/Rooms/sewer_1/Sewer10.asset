@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Sewer10
   m_EditorClassIdentifier: 
   description: the tenth  area
-  roomName: sewers
+  roomName: sewer10
   exits:
   - keyString: aaaaaaaaaa
     exitDescription: there is nothing currently proceeding the tenth area
     valueRoom: {fileID: 0}
-  background: {fileID: 5821158722369262566, guid: 314cf6dfc654d93458bf68988750a5e7, type: 3}
+  background: {fileID: 6968818018772349889, guid: b998f828e5fbe59438de71f8cc867b89, type: 3}
