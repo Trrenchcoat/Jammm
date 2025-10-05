@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Area_Sink
   m_EditorClassIdentifier: 
   description: You are at the sink
-  roomName: bathroom
+  roomName: sink
   exits:
   - keyString: DRAIN
     exitDescription: The drain makes you unsettled

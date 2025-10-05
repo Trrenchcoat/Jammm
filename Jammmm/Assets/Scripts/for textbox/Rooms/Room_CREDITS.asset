@@ -12,7 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Room_CREDITS
   m_EditorClassIdentifier: 
-  description: (credits...)
+  description: '
+
+    Lead writer: Kilnlockhart
+
+    
+
+    Lead programmer: Trrenchcoat
+
+    
+
+    Artists/animators:
+    Foxiistic, Trrenchoat
+
+    
+
+    Music and sound design: Foxiistic, Trrenchcoat'
   roomName: end
   exits:
   - keyString: 

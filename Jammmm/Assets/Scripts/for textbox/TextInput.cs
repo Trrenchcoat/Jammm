@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -6,41 +7,51 @@ using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
+using Text = UnityEngine.UI.Text;
 
 public class TextInput : MonoBehaviour
 {
     [SerializeField] private AudioClip errorSoundClip;
     [SerializeField] private AudioClip inputSoundClip;
     [SerializeField] private AudioClip AmbienceClip;
-    [SerializeField] public Text inputPlaceholdertext;
+    [SerializeField] public Text inputPlaceholdertext; //if this gives problems its because of the Text class assignment above the serialization... -t
     public bool isTitle = true;
     private AudioSource audioSource;
     //private AudioSource audioSourceAmbience;
-    
+
     GameController controller;
     public InputField inputField;
+    public RoomNavigation1 navigation;
+
+    public string[] drainList = { ">LOOK INTO THE DRAIN", ">LOOK IN THE DRAIN", ">THE DRAIN", ">IN THE DRAIN", ">IN DRAIN", ">DRAIN", ">ACCEPT", ">OPPORTUNITY", ">DEATH", ">ACCEPT THE OPPORTUNITY" };
+    //^^^^ WORKING WAY TO TAKE MANY INPUTS FOR ONE OR MULTIPLE OUTCOMES, OR EVEN EXPERIMENT WITH RANDOM OUTCOMES WITH ANOTHER LIST OF RESPONSES... -t
+    public string[] SewerArea1List = { ">CONTINUE", ">RIGHT", ">LEFT", ">MOVE FORWARD" };
 
     public string[] inputExceptions = { ">/", ">THE ORIGINAL" };
 
-    
+
 
     void Awake()
     {
         controller = GetComponent<GameController>();
         inputField.onEndEdit.AddListener(AcceptStringInput);
-        
-}
+        navigation = GetComponent<RoomNavigation1>();
+
+    }
 
 
-    void Start() {
+    void Start()
+    {
         inputField.ActivateInputField();
         Cursor.visible = false;
         audioSource = GetComponent<AudioSource>();
         //audioSourceAmbience = GetComponent<AudioSource>();
         //audioSource.clip = AmbienceClip;
+
         audioSource.PlayOneShot(AmbienceClip);
 
-        
+
     }
 
 
@@ -63,7 +74,7 @@ public class TextInput : MonoBehaviour
                 inputAction.RespondToInput(controller, separatedInputWords);
                 audioSource.clip = inputSoundClip;
                 audioSource.Play();
-                audioSource.pitch = UnityEngine.Random.Range(0.5f, 1.0f);
+                audioSource.pitch = UnityEngine.Random.Range(0.7f, 1.0f);
             }
 
 
@@ -85,23 +96,75 @@ public class TextInput : MonoBehaviour
                 controller.DisplayRoomText();
                 audioSource.clip = inputSoundClip;
                 audioSource.Play();
+                print(navigation.currentRoom.roomName);
             }
             else if (userInput == ">QUIT")
             {
-                Application.Quit();
+                UnityEngine.Application.Quit();
                 print("has done quit");
             }
             else if (userInput == ">START")
             {
-                
+
                 if (isTitle == true)
                 {
                     SceneManager.LoadScene("Rm_Bedroom");
                     isTitle = false;
                 }
-                
+
+
+
+
+
+
+
+
+
+
+                //  FOR AREA CHECK CONDITIONS \/
             }
-            //else if ((userInput == ">GO TO THE DRAIN") && (RoomNavigation1.currentRoom == "Area_Sink" || Navigation.currentRoom == "Area")
+            else if (drainList.Contains(userInput) && (navigation.currentRoom.roomName == "drain"))
+            {
+                SceneManager.LoadScene("Area_Sewers");
+                print(navigation.currentRoom.roomName);
+
+            }
+
+
+            else if (SewerArea1List.Contains(userInput) && (navigation.currentRoom.roomName == "sewer2"))
+            {
+                //before this happens, there would be narration
+
+                //timer here to delay
+                StartCoroutine(EnemyEncounter1(2.0f));
+                controller.LogStringWithReturn("You have encountered an entity!");
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             else
             {
                 controller.actionLog.Add("...type '/' for help." + "\n");
@@ -109,8 +172,8 @@ public class TextInput : MonoBehaviour
                 audioSource.clip = errorSoundClip;
                 audioSource.Play();
             }
-            
-} //OLD ORIGINAL LOOP!
+
+        } //OLD ORIGINAL LOOP!
 
         //for (int i = 0; i < userInput.Length; i++)
         //{
@@ -135,11 +198,29 @@ public class TextInput : MonoBehaviour
 
 
 
-        void InputComplete()
-        {
-            controller.DisplayLoggedText();
-            inputField.ActivateInputField();
-            inputField.text = null;
-        }
+    void InputComplete()
+    {
+        controller.DisplayLoggedText();
+        inputField.ActivateInputField();
+        inputField.text = null;
+    }
+
+
+
+
+
+
+
+    IEnumerator EnemyEncounter1(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+
+        SceneManager.LoadScene("Encounter_1");
 
     }
+
+}
+
+
+  
+        

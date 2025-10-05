@@ -97,12 +97,12 @@ public class GameController : MonoBehaviour
 
 
 
-    public void switchRoom(Room RoomToChangeTo)
-    {
-        roomNavigation.currentRoom = RoomToChangeTo;
-        DisplayRoomText();
-        DisplayRoomBackground();
-    }
+    //public void switchRoom(Room RoomToChangeTo)
+    //{
+    //    roomNavigation.currentRoom = RoomToChangeTo;
+    //    DisplayRoomText();
+    //    DisplayRoomBackground();
+    //}
 
 
 

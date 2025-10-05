@@ -1,5 +1,32 @@
 battle system
 
+position of the first encounter: 2nd area.
+
+>after continueing from dialogue, an enemy appears 
+	>function adds "you have encountered an enemy!" to the chat log, then fades to red
+>transported to battle scene
+	>on start, fade out from red and start music
+
+battle scene has UI: self health(400), display text for damage enemy takes
+
+loop: 
+>enemy attacks first, random number between 10 and 30 for papa
+>player turn, 10 seconds to hit the enemy
+	hand turns into boxing glove
+fight automatically ends after this, defeated enemy.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

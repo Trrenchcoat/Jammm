@@ -17,7 +17,7 @@ public class RoomNavigation1 : MonoBehaviour
     public CursorMode BrushcursorMode;
     public CursorMode normalCursorMode;
 
-    
+    //public bool isTrue = true;
     
 
     Dictionary<string, Room> exitDictionary = new Dictionary<string, Room> ();    //ties whatever word is said to the current room, only applies in that room.

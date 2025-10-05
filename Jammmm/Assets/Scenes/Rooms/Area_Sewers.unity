@@ -1242,10 +1242,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   errorSoundClip: {fileID: 8300000, guid: 10a38cffab7bae34c8fb537596240a4b, type: 3}
   inputSoundClip: {fileID: 8300000, guid: 41dc63fe666cd1849a131502cd849173, type: 3}
-  AmbienceClip: {fileID: 8300000, guid: 1b16120b80b7c404db190019c894c6e2, type: 3}
+  AmbienceClip: {fileID: 8300000, guid: 01d839dfdb7803947a557d59168317bf, type: 3}
   inputPlaceholdertext: {fileID: 1040033145883338682}
   isTitle: 1
   inputField: {fileID: 7871401550843519809}
+  navigation: {fileID: 0}
+  drainList:
+  - '>LOOK INTO THE DRAIN'
+  - '>LOOK IN THE DRAIN'
+  - '>THE DRAIN'
+  - '>IN THE DRAIN'
+  - '>IN DRAIN'
+  - '>DRAIN'
+  - '>ACCEPT'
+  - '>OPPORTUNITY'
+  - '>DEATH'
+  - '>ACCEPT THE OPPORTUNITY'
+  SewerArea1List:
+  - '>CONTINUE'
+  - '>RIGHT'
+  - '>LEFT'
+  - '>MOVE FORWARD'
   inputExceptions:
   - '>/'
   - '>THE ORIGINAL'
@@ -1262,8 +1279,8 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 0.7
+  m_Volume: 0.771
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0

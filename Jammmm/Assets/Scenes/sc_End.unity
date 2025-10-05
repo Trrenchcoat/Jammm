@@ -343,12 +343,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcdfe7784569a514fa2b3557681149f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorSoundClip: {fileID: 8300000, guid: 10a38cffab7bae34c8fb537596240a4b, type: 3}
-  inputSoundClip: {fileID: 8300000, guid: 41dc63fe666cd1849a131502cd849173, type: 3}
-  AmbienceClip: {fileID: 0}
+  errorSoundClip: {fileID: 0}
+  inputSoundClip: {fileID: 0}
+  AmbienceClip: {fileID: 8300000, guid: c736a740671591d46904a44da8328f20, type: 3}
   inputPlaceholdertext: {fileID: 0}
   isTitle: 1
   inputField: {fileID: 4603212994996286194}
+  navigation: {fileID: 0}
+  drainList:
+  - '>LOOK INTO THE DRAIN'
+  - '>LOOK IN THE DRAIN'
+  - '>THE DRAIN'
+  - '>IN THE DRAIN'
+  - '>IN DRAIN'
+  - '>DRAIN'
+  - '>ACCEPT'
+  - '>OPPORTUNITY'
+  - '>DEATH'
+  - '>ACCEPT THE OPPORTUNITY'
+  SewerArea1List:
+  - '>CONTINUE'
+  - '>RIGHT'
+  - '>LEFT'
+  - '>MOVE FORWARD'
   inputExceptions:
   - '>/'
   - '>THE ORIGINAL'
@@ -364,10 +381,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 0.47
-  Loop: 0
+  m_PlayOnAwake: 1
+  m_Volume: 0.69
+  m_Pitch: 0.9
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1150,7 +1167,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: the opportunity is over...
+  m_Text: the opportunity is over...                                                    
+    (quit by typing 'quit')
 --- !u!224 &6839410407424158369
 RectTransform:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sewer2
   m_EditorClassIdentifier: 
   description: the second area
-  roomName: sewers
+  roomName: sewer2
   exits:
   - keyString: 3
     exitDescription: 

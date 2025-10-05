@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Area_Drain
   m_EditorClassIdentifier: 
   description: the drain is saying something.
-  roomName: bathroom
+  roomName: drain
   exits:
   - keyString: 
     exitDescription: Will you accept the opportunity? Will you go down the drain?
