@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Sewer11
   m_EditorClassIdentifier: 
-  description: the eleventh  area
+  description: 'the eleventh  area.
+
+'
   roomName: sewer11
   exits:
-  - keyString: aaaaaaaaaa
-    exitDescription: there is nothing currently proceeding the eleventh area
+  - keyString: 
+    exitDescription: exit the sewers
     valueRoom: {fileID: 0}
   background: {fileID: 5821158722369262566, guid: 314cf6dfc654d93458bf68988750a5e7, type: 3}

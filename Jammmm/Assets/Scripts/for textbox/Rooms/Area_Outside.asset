@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
+  m_Name: Area_Outside
+  m_EditorClassIdentifier: 
+  description: you reach the surface
+  roomName: sewer11
+  exits:
+  - keyString: COFFIN
+    exitDescription: beautiful.
+    valueRoom: {fileID: 11400000, guid: 21571cd49cd2301428ae410bc318d4f1, type: 2}
+  - keyString: LIGHT
+    exitDescription: you can rest now.
+    valueRoom: {fileID: 11400000, guid: 21571cd49cd2301428ae410bc318d4f1, type: 2}
+  background: {fileID: -8708327850468467643, guid: ebf2561ac6ff4864d80e90a589104440, type: 3}

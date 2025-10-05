@@ -15,7 +15,7 @@ MonoBehaviour:
   description: the tenth  area
   roomName: sewer10
   exits:
-  - keyString: aaaaaaaaaa
-    exitDescription: there is nothing currently proceeding the tenth area
-    valueRoom: {fileID: 0}
+  - keyString: 11
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 51ff7f352c976a7499687ece77caa28f, type: 2}
   background: {fileID: 6968818018772349889, guid: b998f828e5fbe59438de71f8cc867b89, type: 3}

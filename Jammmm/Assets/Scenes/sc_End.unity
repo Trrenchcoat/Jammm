@@ -345,7 +345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   errorSoundClip: {fileID: 0}
   inputSoundClip: {fileID: 0}
-  AmbienceClip: {fileID: 8300000, guid: c736a740671591d46904a44da8328f20, type: 3}
+  AmbienceClip: {fileID: 8300000, guid: cc76140426850fb4cabf53530b27f479, type: 3}
   inputPlaceholdertext: {fileID: 0}
   isTitle: 1
   inputField: {fileID: 4603212994996286194}
@@ -361,11 +361,12 @@ MonoBehaviour:
   - '>OPPORTUNITY'
   - '>DEATH'
   - '>ACCEPT THE OPPORTUNITY'
-  SewerArea1List:
-  - '>CONTINUE'
-  - '>RIGHT'
-  - '>LEFT'
-  - '>MOVE FORWARD'
+  Encounter1List:
+  - '>ENEMY 1'
+  Encounter2List:
+  - '>ENEMY 2'
+  Encounter3List:
+  - '>ENEMY 3'
   inputExceptions:
   - '>/'
   - '>THE ORIGINAL'
@@ -384,7 +385,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.69
   m_Pitch: 0.9
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -768,6 +769,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70634652261f92d49adc1c6b5fddbe91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  afterEncounter1WORKING: {fileID: 0}
+  afterEncounter2WORKING: {fileID: 0}
+  afterEncounter3WORKING: {fileID: 0}
   displayText: {fileID: 7129475821429200735}
   inputActions:
   - {fileID: 11400000, guid: aabd6ce3459d11a4aa990509218c3e33, type: 2}
@@ -946,13 +950,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15858fa172849145b310c44a698359b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentRoom: {fileID: 11400000, guid: 21571cd49cd2301428ae410bc318d4f1, type: 2}
+  currentRoom: {fileID: 11400000, guid: 06d7ad1d9220b934ea669398ee682692, type: 2}
   currentBackground: {fileID: 3356837773014537050, guid: 15e4a3cdc56a09f4c8dd09abd1a96938, type: 3}
   brushTeethCursor: {fileID: 0}
   normalCursor: {fileID: 0}
   hotSpot: {x: 0, y: 0}
   BrushcursorMode: 0
   normalCursorMode: 0
+  afterEncounter1Room: {fileID: 0}
 --- !u!224 &4697416474738368459
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1085,7 +1090,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
-  m_Color: {r: 0.58344305, g: 0.5801887, b: 1, a: 1}
+  m_Color: {r: 0.9056604, g: 0.8430814, b: 0.7732289, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
