@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BattleSystem : MonoBehaviour
 {
@@ -11,6 +13,20 @@ public class BattleSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            endCombat();
+        }
+    }
+
+
+
+
+
+    void endCombat()
+    {
+        SceneManager.LoadScene("Area_Sewers");
+        //need to figure out a way to load into the last room, or keep the area sewers loaded at all times.
+        //print(navigation.currentRoom.roomName);
     }
 }
