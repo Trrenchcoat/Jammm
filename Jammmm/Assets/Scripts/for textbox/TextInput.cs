@@ -30,6 +30,8 @@ public class TextInput : MonoBehaviour
     public string[] Encounter2List = { ">ENEMY 2" };
     public string[] Encounter3List = { ">ENEMY 3" };
 
+    public string[] EndSequenceList = { ">END", ">LEAVE", ">RISE", ">UP", ">OUTSIDE", ">CLIMB THE LADDER", ">CLIMB" };
+
     public string[] inputExceptions = { ">/", ">THE ORIGINAL" };
 
 
@@ -171,7 +173,12 @@ public class TextInput : MonoBehaviour
             }
 
 
+            else if (EndSequenceList.Contains(userInput) && (navigation.currentRoom.roomName == "sewer11"))
+            {
+                SceneManager.LoadScene("sc_End");
+                print(navigation.currentRoom.roomName);
 
+            }
 
 
 
