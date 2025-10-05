@@ -140,8 +140,10 @@ public class TextInput : MonoBehaviour
                 //before this happens, there would be narration
 
                 //timer here to delay
+                GlobalVariables.canEncounter1 = false;
                 StartCoroutine(EnemyEncounter1(2.0f));
                 controller.LogStringWithReturn("You have encountered an entity!");
+                print(navigation.currentRoom.roomName);
 
 
             }

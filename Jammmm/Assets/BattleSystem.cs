@@ -4,11 +4,15 @@ using UnityEngine.UI;
 
 public class BattleSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private Text HPvalueDisplay;
 
     public RoomNavigation1 navigation;
     public GameController controller;
     public GlobalVariables global;
+
+
+    public int playerHP = 400;
+    public int enemyDammage;
 
     [SerializeField] public Room nextScene;
 
@@ -18,6 +22,15 @@ public class BattleSystem : MonoBehaviour
         navigation = GetComponent<RoomNavigation1>();
         controller = GetComponent<GameController>();
         global = GetComponent<GlobalVariables>();
+
+        
+    }
+
+
+    void Start()
+    {
+        HPvalueDisplay.text = playerHP.ToString();
+        startCombat();
     }
 
     // Update is called once per frame
@@ -35,17 +48,8 @@ public class BattleSystem : MonoBehaviour
 
     void endCombat()
     {
-        //navigation.currentRoom.roomName = "sewer3";
-        //SceneManager.LoadScene("Area_Sewers");
-        //navigation.currentRoom.roomName = "sewer3";
 
-        //navigation.currentRoom = nextScene;
-        //print(navigation.currentRoom);
-        //navigation.setCurrentRoom(nextScene);
-
-        
-        //if encounter 1, 2 and 3 is false, encounter 1 = true
-        //if encounter 1 is true, and 2 and 3 are false, encounter 2 = true
+    
         
         if ((GlobalVariables.encounter1Bool == false) && (GlobalVariables.encounter2Bool == false) && (GlobalVariables.encounter3Bool == false))
         {
@@ -65,6 +69,16 @@ public class BattleSystem : MonoBehaviour
             SceneManager.LoadScene("Area_Sewers");
         }
 
+         
+    }
+
+
+
+
+
+    void startCombat()
+    {
+        print("started combat");
 
 
 
@@ -74,9 +88,10 @@ public class BattleSystem : MonoBehaviour
 
 
 
-        //need to figure out a way to load into the last room, or keep the area sewers loaded at all times.
-        //print(navigation.currentRoom.roomName);
 
-        //navigation.openScene("sewer3", "Area_Sewers");
+
+
+
+
     }
 }
