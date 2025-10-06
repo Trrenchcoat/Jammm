@@ -12,21 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Area_Outside
   m_EditorClassIdentifier: 
-  description: "You stand before a clearing, the loud metal slam of the sewer cap
-    left behind you. You don\u2019t need to look back anymore. Your bed lies ahead
-    of you, soft mud bringing worms and friendly creatures around the base. It opens,
-    you\u2019re exhausted. You made your bed, now you will lie in it, the coffin
-    you wished to stay sunk in.\r\n\r\n"
-  currRoomInputPlaceholder: Go to sleep, finally, in your coffin?
+  description: you reach the surface
   roomName: sewer11
   exits:
   - keyString: COFFIN
-    exitDescription: Go to sleep, finally, in your coffin?
+    exitDescription: beautiful.
     valueRoom: {fileID: 11400000, guid: 21571cd49cd2301428ae410bc318d4f1, type: 2}
   - keyString: LIGHT
     exitDescription: you can rest now.
-    valueRoom: {fileID: 11400000, guid: 21571cd49cd2301428ae410bc318d4f1, type: 2}
-  - keyString: BED
-    exitDescription: 
     valueRoom: {fileID: 11400000, guid: 21571cd49cd2301428ae410bc318d4f1, type: 2}
   background: {fileID: -8708327850468467643, guid: ebf2561ac6ff4864d80e90a589104440, type: 3}

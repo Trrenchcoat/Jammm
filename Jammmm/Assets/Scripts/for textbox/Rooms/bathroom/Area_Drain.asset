@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: "You brush your teeth.\nThere\u2019s something in the drain. There
     are no words. \nYou stare. It stares back.\r"
-  currRoomInputPlaceholder: Do you accept it?
+  currRoomInputPlaceholder: Do you accept it? Do you go to the drain?
   roomName: drain
   exits:
   - keyString: DRAIN

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Room_END
   m_EditorClassIdentifier: 
-  description: "What you saw in the mirror reflected a life worth living. It\u2019s
-    a shame you waited to die before you looked.\r\n\n\"Death is an opportunity\"
-    - for Jamsepticeye 2025\nWe thank you for playing!"
-  currRoomInputPlaceholder: 
+  description: '"Death is an opportunity" - for Jamsepticeye 2025
+
+    we thank you
+    for playinhg'
   roomName: end
   exits:
   - keyString: CREDITS

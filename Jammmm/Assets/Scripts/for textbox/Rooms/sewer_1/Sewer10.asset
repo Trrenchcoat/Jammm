@@ -12,17 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Sewer10
   m_EditorClassIdentifier: 
-  description: "You need to look away. With the last of your energy, you sprint away
-    from the amalgam. It is there. You\u2019re finally looking in the mirror. Every
-    fiber of your being wishes to rush forward, the guts to tear from your body,
-    magnetizing to the entity. There\u2019s a ladder to your right. \r\n\r\nYou need
-    to break free. The comfortability of being consumed for so long, you wish for
-    those memories behind you to come out to the light. You saw yourself. You don\u2019t
-    need to drown. Get out.\r"
-  currRoomInputPlaceholder: go to the ladder?
+  description: the tenth  area
+  currRoomInputPlaceholder: just going to stand there?
   roomName: sewer10
   exits:
-  - keyString: LADDER
+  - keyString: 11
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 51ff7f352c976a7499687ece77caa28f, type: 2}
   background: {fileID: 6968818018772349889, guid: b998f828e5fbe59438de71f8cc867b89, type: 3}
