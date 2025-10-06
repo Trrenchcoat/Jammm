@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Sewer11
   m_EditorClassIdentifier: 
-  description: 'the eleventh  area.
-
-'
+  description: "You tear yourself away as if your body was velcro. Each hand latches
+    to the ladder rods as if you are holding on the edge of a cliff. You don\u2019t
+    know exactly why you are pushing so hard. You know you must. This will end the
+    way you want it to. The light of the outside stands before you, sweet smells
+    of pine and pollen. Normally, you\u2019d sneeze.\r"
   currRoomInputPlaceholder: just going to stand there?
   roomName: sewer11
   exits:
   - keyString: 
-    exitDescription: exit the sewers
+    exitDescription: " Today, you wouldn\u2019t want anything less. Climb the ladder?"
     valueRoom: {fileID: 0}
   background: {fileID: 5821158722369262566, guid: 314cf6dfc654d93458bf68988750a5e7, type: 3}

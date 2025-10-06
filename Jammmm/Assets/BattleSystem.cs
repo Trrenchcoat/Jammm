@@ -57,7 +57,7 @@ public class BattleSystem : MonoBehaviour
         
         if (playerHP > 0)
         {
-            StartCoroutine(AttackDelay(1.0f));
+            StartCoroutine(AttackDelay(2.0f));
             print(enemyDammage);
             attack();
         }
@@ -103,7 +103,7 @@ public class BattleSystem : MonoBehaviour
 
     void attack()
     {
-        enemyDammage = UnityEngine.Random.Range(50,99);
+        enemyDammage = UnityEngine.Random.Range(0,2);
         
         
         GlobalVariables.canEncounter1 = false;

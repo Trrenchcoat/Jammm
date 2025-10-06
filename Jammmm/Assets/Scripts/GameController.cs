@@ -92,7 +92,7 @@ public class GameController : MonoBehaviour
             DisplayLoggedText();
             DisplayRoomBackground();
         }
-        if ((GlobalVariables.encounter1Bool == true) && (GlobalVariables.encounter2Bool == true) && (GlobalVariables.encounter3Bool == true))
+        if (GlobalVariables.encounter3Bool == true)
         {
 
             roomNavigation.currentRoom = afterEncounter3WORKING;
