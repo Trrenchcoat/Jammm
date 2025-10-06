@@ -14,3 +14,59 @@ problem: it loads the second encounter well, but then it loads the first encount
 
 
 even loading encounter 2 or 3 on their own will automatically load encounter 1, meaning the problem is in the gamecontroller.cs start function.
+
+
+
+
+
+
+
+if ((GlobalVariables.encounter1Bool == true) && (GlobalVariables.encounter2Bool == false) && (GlobalVariables.encounter3Bool == false) && (GlobalVariables.canEncounter1 == false))
+{
+
+    roomNavigation.currentRoom = afterEncounter1WORKING;
+    //print(roomNavigation.currentRoom.name);
+    print(GlobalVariables.canEncounter1);
+    DisplayRoomText();
+    DisplayLoggedText();
+    DisplayRoomBackground();
+}
+if ((GlobalVariables.encounter1Bool == true) && (GlobalVariables.encounter2Bool == true) && (GlobalVariables.encounter3Bool == false)) 
+{
+
+    roomNavigation.currentRoom = afterEncounter2WORKING;
+    print(roomNavigation.currentRoom.name);
+    DisplayRoomText();
+    DisplayLoggedText();
+    DisplayRoomBackground();
+}
+if ((GlobalVariables.encounter1Bool == true) && (GlobalVariables.encounter2Bool == true) && (GlobalVariables.encounter3Bool == true))
+{
+
+    roomNavigation.currentRoom = afterEncounter3WORKING;
+    print(roomNavigation.currentRoom.name);
+    DisplayRoomText();
+    DisplayLoggedText();
+    DisplayRoomBackground();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

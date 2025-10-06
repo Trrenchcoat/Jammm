@@ -59,6 +59,7 @@ public class RoomNavigation1 : MonoBehaviour
             controller.DisplayRoomText();
             controller.DisplayRoomBackground();
             currentBackground = currentRoom.background;
+            controller.inputFieldPlaceholder.text = currentRoom.currRoomInputPlaceholder;
 
             //if (currentRoom.roomName == "bathroom")
             //{

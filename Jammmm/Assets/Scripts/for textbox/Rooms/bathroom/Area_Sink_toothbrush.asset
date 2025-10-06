@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
+  m_Name: Area_Sink_toothbrush
+  m_EditorClassIdentifier: 
+  description: "There\u2019s already toothpaste on the brush. It\u2019s cracking
+    with dried patches, having sat untended to for a very long time. It\u2019s practically
+    fused to the bristles, dried foxtails waiting to pierce your softened enamel.
+    \r\n"
+  currRoomInputPlaceholder: You need to brush your teeth.
+  roomName: toothbrush
+  exits: []
+  background: {fileID: -8558289449854139997, guid: 568d96e50c7af1b40bb920e2d6c877fa, type: 3}

@@ -16,6 +16,7 @@ MonoBehaviour:
     smell. At first, you only smell strong mixes of chloride and vinegar. After a
     few shaky breaths, the undertone scent of maggots becomes recognizable, alongside
     the hint of orange room spray. It\u2019s clearly not doing its job.\r\n"
+  currRoomInputPlaceholder: You need to brush your teeth.
   roomName: bathroom
   exits:
   - keyString: SINK

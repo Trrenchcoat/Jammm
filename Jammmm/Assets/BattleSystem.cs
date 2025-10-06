@@ -1,10 +1,16 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BattleSystem : MonoBehaviour
 {
     [SerializeField] private Text HPvalueDisplay;
+    [SerializeField] private AudioClip EnemyHitSFX;
+    [SerializeField] private AudioClip PlayerHitSFX;
+
+    private AudioSource audiosource;
 
     public RoomNavigation1 navigation;
     public GameController controller;
@@ -29,8 +35,10 @@ public class BattleSystem : MonoBehaviour
 
     void Start()
     {
+        audiosource = GetComponent<AudioSource>();
         HPvalueDisplay.text = playerHP.ToString();
         startCombat();
+        GlobalVariables.canEncounter1 = false;
     }
 
     // Update is called once per frame
@@ -78,7 +86,12 @@ public class BattleSystem : MonoBehaviour
 
     void startCombat()
     {
+        enemyDammage = UnityEngine.Random.Range(50,99);
         print("started combat");
+        StartCoroutine(AttackDelay(2.0f));
+        GlobalVariables.canEncounter1 = false;
+
+    }
 
 
 
@@ -88,10 +101,16 @@ public class BattleSystem : MonoBehaviour
 
 
 
+    IEnumerator AttackDelay(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
 
-
-
-
+        playerHP = playerHP - enemyDammage;
+        HPvalueDisplay.text = playerHP.ToString();
+        audiosource.pitch = UnityEngine.Random.Range(0.7f, 1.0f);
+        audiosource.clip = EnemyHitSFX;
+        audiosource.Play();
+        //play sound FX
 
     }
 }

@@ -16,9 +16,11 @@ public class GameController : MonoBehaviour
     [SerializeField] private Room afterEncounter3WORKING;
 
     public Text displayText;
+    public Text inputFieldPlaceholder;
     public InputAction[] inputActions;
 
     public SpriteRenderer displayBackground; //THIS PASSES, LIKE THE TEXT, THE ACTUAL GAME BACKGROUND SO THAT IT MAY BE CHANGED DYNAMICALLY... -t
+    
 
     [HideInInspector] public RoomNavigation1 roomNavigation;
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>(); //list of descriptions of exits for each room!-t
@@ -34,6 +36,7 @@ public class GameController : MonoBehaviour
     {
         string logAsText = string.Join("\n", actionLog.ToArray());
         displayText.text = logAsText;
+        
     }
 
 

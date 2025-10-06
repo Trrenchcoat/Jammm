@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sewer1
   m_EditorClassIdentifier: 
   description: well. you're down the drain now.
+  currRoomInputPlaceholder: just going to stand there?
   roomName: sewer1
   exits:
   - keyString: 2

@@ -879,7 +879,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1698609860807234097, guid: ecf7555817b4d3c47b546aed44cf15b4, type: 3}
-  m_Color: {r: 0.58344305, g: 0.5801887, b: 1, a: 1}
+  m_Color: {r: 0.5186917, g: 0.514151, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1098,7 +1098,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70634652261f92d49adc1c6b5fddbe91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  afterEncounter1WORKING: {fileID: 0}
+  afterEncounter2WORKING: {fileID: 0}
+  afterEncounter3WORKING: {fileID: 0}
   displayText: {fileID: 7129475820577766267}
+  inputFieldPlaceholder: {fileID: 6679897590840531501}
   inputActions:
   - {fileID: 11400000, guid: aabd6ce3459d11a4aa990509218c3e33, type: 2}
   displayBackground: {fileID: 5982794976742805286}
@@ -1124,6 +1128,7 @@ MonoBehaviour:
   hotSpot: {x: 0, y: 0}
   BrushcursorMode: 1
   normalCursorMode: 0
+  afterEncounter1Room: {fileID: 0}
 --- !u!114 &504319133224393420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,6 +1147,32 @@ MonoBehaviour:
   inputPlaceholdertext: {fileID: 6679897590840531501}
   isTitle: 1
   inputField: {fileID: 4603212996392984278}
+  navigation: {fileID: 0}
+  drainList:
+  - '>LOOK INTO THE DRAIN'
+  - '>LOOK IN THE DRAIN'
+  - '>THE DRAIN'
+  - '>IN THE DRAIN'
+  - '>IN DRAIN'
+  - '>DRAIN'
+  - '>ACCEPT'
+  - '>OPPORTUNITY'
+  - '>DEATH'
+  - '>ACCEPT THE OPPORTUNITY'
+  Encounter1List:
+  - '>ENEMY 1'
+  Encounter2List:
+  - '>ENEMY 2'
+  Encounter3List:
+  - '>ENEMY 3'
+  EndSequenceList:
+  - '>END'
+  - '>LEAVE'
+  - '>RISE'
+  - '>UP'
+  - '>OUTSIDE'
+  - '>CLIMB THE LADDER'
+  - '>CLIMB'
   inputExceptions:
   - '>/'
   - '>THE ORIGINAL'

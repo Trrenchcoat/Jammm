@@ -15,6 +15,7 @@ MonoBehaviour:
   description: 'the eleventh  area.
 
 '
+  currRoomInputPlaceholder: just going to stand there?
   roomName: sewer11
   exits:
   - keyString: 

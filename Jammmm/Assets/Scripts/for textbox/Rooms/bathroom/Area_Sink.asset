@@ -12,22 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Area_Sink
   m_EditorClassIdentifier: 
-  description: You are at the sink
+  description: "The smell grows stronger, however, your senses become tolerant as
+    they always do. The stuffy air suffocates you, complimenting the comfortable
+    isolation inside your own morbid mind. You could open a window, but if you stop
+    to do anything else, you won\u2019t want to come back to the sink. \r"
+  currRoomInputPlaceholder: You need to brush your teeth.
   roomName: sink
   exits:
   - keyString: DRAIN
-    exitDescription: The drain makes you unsettled
+    exitDescription: 
     valueRoom: {fileID: 11400000, guid: f4118f8865805cd4e810d4600eef2641, type: 2}
-  - keyString: FAUCET
-    exitDescription: 
-    valueRoom: {fileID: 0}
-  - keyString: TAP
-    exitDescription: 
-    valueRoom: {fileID: 0}
-  - keyString: TOOTHBRUSH
-    exitDescription: 
-    valueRoom: {fileID: 0}
-  - keyString: TEETH
-    exitDescription: 
-    valueRoom: {fileID: 0}
   background: {fileID: -8558289449854139997, guid: 568d96e50c7af1b40bb920e2d6c877fa, type: 3}

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sewer7
   m_EditorClassIdentifier: 
   description: the seventh area
+  currRoomInputPlaceholder: just going to stand there?
   roomName: sewer7
   exits:
   - keyString: 8

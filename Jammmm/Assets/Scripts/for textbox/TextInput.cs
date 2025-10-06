@@ -248,9 +248,15 @@ public class TextInput : MonoBehaviour
 
     IEnumerator EnemyEncounter1(float delayTime)
     {
-        yield return new WaitForSeconds(delayTime);
+        
+        if (GlobalVariables.canEncounter1 == true)
+        {
+            yield return new WaitForSeconds(delayTime);
 
-        SceneManager.LoadScene("Encounter_1");
+            SceneManager.LoadScene("Encounter_1");
+        }
+        
+        
 
     }
 

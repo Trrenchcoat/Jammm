@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Area_toilet
   m_EditorClassIdentifier: 
   description: You don't need to use the toilet right now.
+  currRoomInputPlaceholder: You need to brush your teeth.
   roomName: toilet
   exits:
   - keyString: SINK

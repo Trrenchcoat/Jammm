@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Area_Drain
   m_EditorClassIdentifier: 
-  description: the drain is saying something.
+  description: You spit.
+  currRoomInputPlaceholder: There's something in the drain.
   roomName: drain
   exits:
   - keyString: 
