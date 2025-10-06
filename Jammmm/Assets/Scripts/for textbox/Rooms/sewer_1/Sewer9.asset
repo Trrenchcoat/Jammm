@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Sewer9
   m_EditorClassIdentifier: 
-  description: the ninth  area
+  description: 
   currRoomInputPlaceholder: just going to stand there?
   roomName: sewer9
   exits:
-  - keyString: 10
+  - keyString: 
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 4839eb14fef5a5d42b0adb877b306bcb, type: 2}
   background: {fileID: 3865587927970816707, guid: 4de24a51f57503d4c9e9c57a49950707, type: 3}

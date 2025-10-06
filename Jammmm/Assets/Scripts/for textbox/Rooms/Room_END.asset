@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Room_END
   m_EditorClassIdentifier: 
-  description: '"Death is an opportunity" - for Jamsepticeye 2025
-
-    we thank you
-    for playinhg'
+  description: "What you saw in the mirror reflected a life worth living. It\u2019s
+    a shame you waited to die before you looked.\n\n\"Death is an opportunity\" -
+    for Jamsepticeye 2025\nWe thank you for playing!"
+  currRoomInputPlaceholder: 
   roomName: end
   exits:
   - keyString: CREDITS
-    exitDescription: (type 'go to the credits' for credits)
+    exitDescription: (type 'go to the credits' for credits) (double enter)
     valueRoom: {fileID: 11400000, guid: 70391f0969b788948831b5d9fa19bce9, type: 2}
   background: {fileID: 0}
