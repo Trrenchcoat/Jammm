@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Sewer4
   m_EditorClassIdentifier: 
-  description: the fourth area
-  currRoomInputPlaceholder: just going to stand there?
+  description: "You feel your back stiffen from years of unkept posture and isolation.
+    Muscles contorting with each step you take, pops begin to resonate from your
+    kneecaps. Your skin feels wilted. Each breath you take seems to go straight behind
+    your eyes, creating a phantom smell of something you cannot remember. The slight
+    wind reminds you of the faint hope of an end to this tunnel.\r"
+  currRoomInputPlaceholder: go further into passage?
   roomName: sewer4
   exits:
-  - keyString: 5
-    exitDescription: 
+  - keyString: PASSAGE
+    exitDescription: go further into passage?
     valueRoom: {fileID: 11400000, guid: 5b4e85a721c90944b83805cf4f2bf8ad, type: 2}
   background: {fileID: -3602011145999552112, guid: a3373ca2846083e43b43e0b484881a3d, type: 3}

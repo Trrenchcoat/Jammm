@@ -1145,6 +1145,9 @@ MonoBehaviour:
   inputSoundClip: {fileID: 8300000, guid: 41dc63fe666cd1849a131502cd849173, type: 3}
   AmbienceClip: {fileID: 8300000, guid: 1b16120b80b7c404db190019c894c6e2, type: 3}
   inputPlaceholdertext: {fileID: 6679897590840531501}
+  getToothbrushRoom: {fileID: 11400000, guid: 6d7697cd640b92a43bba1b6ce973ea67, type: 2}
+  wetToothbrushRoom: {fileID: 11400000, guid: b312989d8164fb6438beba42c2c30f89, type: 2}
+  BrushedTeethRoom: {fileID: 11400000, guid: f4118f8865805cd4e810d4600eef2641, type: 2}
   isTitle: 1
   inputField: {fileID: 4603212996392984278}
   navigation: {fileID: 0}
@@ -1176,6 +1179,12 @@ MonoBehaviour:
   inputExceptions:
   - '>/'
   - '>THE ORIGINAL'
+  getToothBrushList:
+  - ?????
+  wetToothBrushList:
+  - '>BRUSH TEETH'
+  BrushedTeethList:
+  - '>SPIT'
 --- !u!82 &537954604763378254
 AudioSource:
   m_ObjectHideFlags: 0

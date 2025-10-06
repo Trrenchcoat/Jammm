@@ -37,16 +37,33 @@ public class BattleSystem : MonoBehaviour
     {
         audiosource = GetComponent<AudioSource>();
         HPvalueDisplay.text = playerHP.ToString();
-        startCombat();
+        
         GlobalVariables.canEncounter1 = false;
+
+
+        
+ 
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    endCombat();
+        //}
+
+        
+        if (playerHP > 0)
         {
-            endCombat();
+            StartCoroutine(AttackDelay(1.0f));
+            print(enemyDammage);
+            attack();
+        }
+        else
+        {
+            StartCoroutine(Return(4.0f));
         }
     }
 
@@ -84,11 +101,11 @@ public class BattleSystem : MonoBehaviour
 
 
 
-    void startCombat()
+    void attack()
     {
         enemyDammage = UnityEngine.Random.Range(50,99);
-        print("started combat");
-        StartCoroutine(AttackDelay(2.0f));
+        
+        
         GlobalVariables.canEncounter1 = false;
 
     }
@@ -105,12 +122,25 @@ public class BattleSystem : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTime);
 
+        
         playerHP = playerHP - enemyDammage;
         HPvalueDisplay.text = playerHP.ToString();
         audiosource.pitch = UnityEngine.Random.Range(0.7f, 1.0f);
         audiosource.clip = EnemyHitSFX;
         audiosource.Play();
+        
         //play sound FX
+
+    }
+
+
+
+    IEnumerator Return(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        endCombat();
+
+        //return
 
     }
 }

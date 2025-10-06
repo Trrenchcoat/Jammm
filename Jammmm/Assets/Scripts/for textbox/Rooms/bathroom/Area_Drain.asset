@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Area_Drain
   m_EditorClassIdentifier: 
-  description: You spit.
-  currRoomInputPlaceholder: There's something in the drain.
+  description: "You brush your teeth.\nThere\u2019s something in the drain. There
+    are no words. \nYou stare. It stares back.\r"
+  currRoomInputPlaceholder: Do you accept it? Do you go to the drain?
   roomName: drain
   exits:
-  - keyString: 
-    exitDescription: Will you accept the opportunity? Will you go down the drain?
+  - keyString: DRAIN
+    exitDescription: 
     valueRoom: {fileID: 0}
   background: {fileID: 3070545878321003565, guid: bc7f620d501d9f94ab52488a382d3433, type: 3}

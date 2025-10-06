@@ -16,10 +16,10 @@ MonoBehaviour:
     they always do. The stuffy air suffocates you, complimenting the comfortable
     isolation inside your own morbid mind. You could open a window, but if you stop
     to do anything else, you won\u2019t want to come back to the sink. \r"
-  currRoomInputPlaceholder: You need to brush your teeth.
+  currRoomInputPlaceholder: check the drain?
   roomName: sink
   exits:
   - keyString: DRAIN
-    exitDescription: 
+    exitDescription: check the drain?
     valueRoom: {fileID: 11400000, guid: f4118f8865805cd4e810d4600eef2641, type: 2}
   background: {fileID: -8558289449854139997, guid: 568d96e50c7af1b40bb920e2d6c877fa, type: 3}

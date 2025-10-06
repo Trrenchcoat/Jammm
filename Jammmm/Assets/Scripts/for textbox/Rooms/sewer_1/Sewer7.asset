@@ -12,11 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Sewer7
   m_EditorClassIdentifier: 
-  description: the seventh area
-  currRoomInputPlaceholder: just going to stand there?
+  description: "Nothing has interested you for a while now. You used to have so many
+    hobbies, friends, and ambitions. You felt healthy. Not only that, but you felt
+    happy. Happy. You overdid it. How do you put too many eggs in one basket if you
+    have no eggs and no basket? You\u2019re exhausted, heaving each breath as if
+    you just ran a marathon. Your neck holds rings of bruises, scars spread about
+    your skin. You can\u2019t hide them anymore.\r\n\r\nThere\u2019s nowhere else
+    to go, you know what to do.\r\n"
+  currRoomInputPlaceholder: go further?
   roomName: sewer7
   exits:
-  - keyString: 8
-    exitDescription: 
+  - keyString: PASSAGE
+    exitDescription: go further into passage?
     valueRoom: {fileID: 11400000, guid: eeab101797f879d4a931459b261e297e, type: 2}
   background: {fileID: 3638052136721763057, guid: 9ccf6121310b71846b8a133471ecf881, type: 3}

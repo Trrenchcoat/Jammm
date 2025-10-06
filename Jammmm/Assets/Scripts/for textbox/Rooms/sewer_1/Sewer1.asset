@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Sewer1
   m_EditorClassIdentifier: 
-  description: well. you're down the drain now.
-  currRoomInputPlaceholder: just going to stand there?
+  description: "The nerve endings throughout your body rupture for but a moment.
+    Piercing, aching, burning pain that disappears as quickly as it came. You stumble
+    as your equilibrium rebuilds, and you are left within some sort of sewer system.\r"
+  currRoomInputPlaceholder: go into the passage?
   roomName: sewer1
   exits:
-  - keyString: 2
-    exitDescription: 
+  - keyString: PASSAGE
+    exitDescription: go further into passage?
     valueRoom: {fileID: 11400000, guid: 7c7116320f592f64d9da3ae1830e39ca, type: 2}
   background: {fileID: -2030335443627885928, guid: 3481091c55afeb947ac286ad7d9010f6, type: 3}

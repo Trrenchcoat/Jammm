@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Sewer8
   m_EditorClassIdentifier: 
-  description: the eighth area
-  currRoomInputPlaceholder: just going to stand there?
+  description: "Barely out of sight, a shine under the water blanket catches your
+    eye. A reflective, unsanded, cracked section of glass rests against the metal
+    piping. With each step, you can see the gathering of roaches around the singular
+    item along your path. When you look inside\u2026\r\n\r\nAny small crack you can
+    see: squelching erupts, causing you to stumble backwards. An amalgamation of
+    parts you find so familiar stretches and forms tendons, grows hair, molding into
+    every \u201Cwhat could have been.\u201D\r"
+  currRoomInputPlaceholder: ' Take a closer look at the amalgam. You desperately
+    crave to relive the memories.'
   roomName: sewer8
   exits:
-  - keyString: 9
+  - keyString: AMALGAM
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 6c0f7b75dc6f7a44bb08120e33ac1e1f, type: 2}
   background: {fileID: -958099882079520630, guid: 748065d2d18a26b4592e62b19ec9a5dd, type: 3}

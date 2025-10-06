@@ -35,6 +35,12 @@ public class TextInput : MonoBehaviour
     public string[] inputExceptions = { ">/", ">THE ORIGINAL" };
 
 
+    public string[] getToothBrushList = { ">/", ">THE ORIGINAL" };
+    public string[] wetToothBrushList = { ">/", ">THE ORIGINAL" };
+    public string[] BrushedTeethList = { ">/", ">THE ORIGINAL" };
+    
+
+
 
     void Awake()
     {

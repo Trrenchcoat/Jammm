@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Sewer2
   m_EditorClassIdentifier: 
-  description: the second area
+  description: "You tread forward. Every step you take echos around you, the dark
+    shallow water rippling away from you. The texture of the walls seems to shift
+    as though you are in a heatwave, odd considering the shrill cold breeze you feel
+    lightly grazing daggers past you.\nA few crackling snaps echo from in front of
+    you. The silhouette of a figure resides in your way.\r"
   currRoomInputPlaceholder: just going to stand there?
   roomName: sewer2
   exits:
-  - keyString: 3
-    exitDescription: 
+  - keyString: FIGURE
+    exitDescription: go to the figure?
     valueRoom: {fileID: 11400000, guid: 3629d6b22b2816b489243e3b329204a9, type: 2}
   background: {fileID: 8257562389957712135, guid: bf1e01d2d806c784ea3584c296eb1371, type: 3}

@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8e950425bb8f94f8eb4c8371ce5748, type: 3}
   m_Name: Sewer5
   m_EditorClassIdentifier: 
-  description: the fifth area
-  currRoomInputPlaceholder: just going to stand there?
+  description: "It\u2019s been a long time since you last looked in the mirror. When
+    was the last time you looked back at yourself? Do you remember what color your
+    eyes are? Do you have freckles? Are you rotted? A wafting of perfume passes along
+    the icicle breeze. \r"
+  currRoomInputPlaceholder: go further into the passage?
   roomName: sewer5
   exits:
-  - keyString: 6
-    exitDescription: 
+  - keyString: PASSAGE
+    exitDescription: "There\u2019s nowhere else to go, you know what to do. go further
+      into the passage?"
     valueRoom: {fileID: 11400000, guid: efe8fe4b4bfd1c14885ad0dde6fbb518, type: 2}
   background: {fileID: -8420053800424069582, guid: 8af1290a5cef1bf4b91afe195acef4a2, type: 3}
